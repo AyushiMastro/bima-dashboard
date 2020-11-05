@@ -15,26 +15,52 @@ function Sidenav(props) {
     <Row>
       <Col sm={2} className="pr-0">
         <div className="sidebar">
-          <h3>BIMA</h3>
+          <h3>STARMAKER</h3>
           <ul className="side-bar">
             <p className="">Profile</p>
             <li>
-              <a href="">Reports</a>
+              <a href="/User">User</a>
             </li>
             <li>
-              <a href="">Dashboard</a>
+              <a href="/Vedios">Vedios</a>
             </li>
             <li>
-              <a href="/Category">Categories</a>
+              <NavDropdown
+                title="Sound"
+                className="pl-0"
+                id="collasible-nav-dropdown"
+              >
+                <NavDropdown.Item href="#action/3.1">Sad</NavDropdown.Item>
+                <NavDropdown.Item href="/Sound">Romantic</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Comedy</NavDropdown.Item>
+
+                <NavDropdown.Item href="#action/3.4">
+                  Devotional
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Funny</NavDropdown.Item>
+              </NavDropdown>
             </li>
             <li>
-              <a href="">Admin</a>
+              <NavDropdown
+                title="Profile"
+                className="pl-0"
+                id="collasible-nav-dropdown"
+              >
+                <NavDropdown.Item href="/Profile">Password</NavDropdown.Item>
+                <NavDropdown.Item href="/Info">User Info</NavDropdown.Item>
+              </NavDropdown>
             </li>
             <li>
-              <a href="/Prospect">Prospects</a>
+              <a href="/VerificationRequest">Verification Request</a>
             </li>
             <li>
-              <a href="">CRM data</a>
+              <a href="/ManageVedio">Manage Content</a>
+            </li>
+            <li>
+              <a href="/Explore">Explore Vedios</a>
+            </li>
+            <li>
+              <a href="/Recharge">Recharges</a>
             </li>
           </ul>
           <p>help</p>
